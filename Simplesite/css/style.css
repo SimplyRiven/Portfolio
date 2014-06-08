@@ -1,6 +1,95 @@
-#swag
+#maincontent
 {
-	height: 1000px;
+	height: 500px;
+	width: 624px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+	background-color: #fff;
+}
+
+#maincontentitem
+{
+	height: 450px;
+	width: 600px;
+	border: 1px solid #aaa;
+	border-radius: 2px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 37.5px;
+	background-color: #aaa;
+}
+
+#welcomemessage
+{
+	width: 1000px;
+	color: #bbb;
+	font-size: 2.5em;
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+	text-align: center;
+}
+
+#welcomemessage h1
+{
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+	text-shadow: -5px 5px 5px #000;
+}
+
+#welcomemessage p
+{
+	font-size: 30px;
+	display: inline-block;
+	text-shadow: 0 0 20px #000;
+}
+
+#uplittext
+{
+	color: #4681db;
+	font-size: 30px;
+	display: inline-block;
+	text-shadow: 0 0 20px #000;
+	text-decoration: none;
+	transition: 1s;
+}
+
+#uplittext:hover
+{
+	color: #7e7e7e;
+}
+
+#initialcontainer
+{
+	border-radius: 100px;
+	width: 75px;
+	height: 75px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	background: #4681db;
+	box-shadow: 0 5px 20px #000;
+}
+
+#initialtext
+{
+	font-size: 35px;
+	color: #000;
+	display: block;
+	height:60px;
+	width: 75px;
+	margin: 0 auto;
+	padding-top: 17.5px;
+	border-radius: 100px;
+	text-decoration: none;
+	transition: 1s;
+}
+
+#initialtext:hover
+{
+	color: #bbb;
 }
 
 body
@@ -9,7 +98,7 @@ body
 	min-width: 1024px;
 	margin: 0;
 	padding: 0;
-	background: #bbb;
+	background-image: url(../img/triangles.png);
 }
 
 #topbar
@@ -19,7 +108,7 @@ body
 	padding: 0;
 	height: 42px;
 	text-align: center;
-	background-color: #555a70;
+	background-color: #2e2e2e;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -55,7 +144,7 @@ body
 
 #topbarhome span
 {
-	background-color: #555a70;
+	background-color: #2e2e2e;
 	color: #fff;
 }
 
@@ -74,26 +163,7 @@ body
 
 #topbarabout span
 {
-	background-color: #555a70;
-	color: #fff;
-}
-
-#topbarimages
-{	
-	background: url(../img/haxyo.png) no-repeat 0;
-	background-position: center;
-	background-color: #fff;
-}
-
-#topbarimages:hover
-{
-	background: url(../img/haxyo.png) no-repeat 0;
-	background-position: center bottom;
-}
-
-#topbarimages span
-{
-	background-color: #555a70;
+	background-color: #2e2e2e;
 	color: #fff;
 }
 
@@ -112,26 +182,7 @@ body
 
 #topbarportfolio span
 {
-	background-color: #555a70;
-	color: #fff;
-}
-
-#topbarcv
-{	
-	background: url(../img/cv.png) no-repeat 0;
-	background-position: center;
-	background-color: #fff;
-}
-
-#topbarcv:hover
-{
-	background: url(../img/cv.png) no-repeat 0;
-	background-position: center bottom;
-}
-
-#topbarcv span
-{
-	background-color: #555a70;
+	background-color: #2e2e2e;
 	color: #fff;
 }
 
@@ -150,7 +201,7 @@ body
 
 #topbarcontact span
 {
-	background-color: #555a70;
+	background-color: #2e2e2e;
 	color: #fff;
 }
 
@@ -209,7 +260,7 @@ a:hover span
 {
 	margin: 0;
 	padding: 0;
-	width: 1024px;
+	width: 250px;
 	display: inline-block;
 	vertical-align: top;
 	margin-top: -30px;
@@ -220,15 +271,15 @@ a:hover span
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: #fff;
+	background-color: #eee;
 }
 
 #navigationmenu ul
 {
 	padding: 0;
-	margin: 42px;
+	margin: 0;
 	list-style-type: none;
-	border: 1px solid #fff;
+	border: 1px solid #eee;
 	text-align: center;
 }
 
@@ -255,10 +306,96 @@ a:hover span
 #navigationmenu li a:hover
 {
 	color: #4681db;
-	background: #eee;
+	background: #ddd;
 }
 
 #navigationmenu li + li
 {
 	border-left: 1px solid #bbb;
+}
+
+footer
+{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+	height: 30px;
+	text-align: center;
+	line-height: 0;
+}
+
+#contactcontent
+{
+	width: 50%;
+	height: relative;
+	margin: 11.5% 25% 0 25%;
+	font-size: 25px;
+	color: #bbb;
+}
+
+#contacttag
+{
+	width: 50%;
+	float: left;
+}
+
+#contactinfo
+{
+	width: 50%;
+	float: right;
+}
+
+.tagcontactfix
+{
+	float:right;
+	margin: 25px 20px 0 100px;
+}
+
+.privacyinfo
+{
+	width: 50%;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	text-align: center;
+	margin: 5% 25% -4% 25%;
+}
+
+#cvimage
+{
+	width: 50%;
+	margin: 10% 25% 10% 25%;
+}
+
+.portfolioitem
+{
+	color: #fff;
+	width: 60%;
+	margin: 2.5% 20% 4.5% 20%;
+	height: 10%;
+}
+
+.portfolioitem img
+{
+	height: relative;
+	width: 20%;
+}
+
+.portfolioitem h1
+{
+	
+	float: right;
+	width: 75%;
+	display: inline-block;
+	text-align: center;
+	border-bottom: 1px solid #fff;
+}
+
+.portfolioitem p
+{
+	display: inline-block;
+	float: right;
+	width: 75%;
+	margin: 0;
 }
